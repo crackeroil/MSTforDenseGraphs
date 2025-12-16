@@ -191,9 +191,48 @@ class DataReader:
                 vertices.append((float(row[0]), float(row[1])))
         return vertices, len(vertices)
 
-    def read_csv_columns(self, file_location, column_names):
-        df = pd.read_csv(file_location, usecols=column_names)
-        V = []
-        for index, line in df.iterrows():
-            V.append((float(line[0]), float(line[1])))
         return V, len(V)
+
+    def read_and_filter_dataset(self, file_location, min_degree=100, dataset_name=None):
+        """
+        Reads a dataset using a 2-pass approach to filter vertices by degree.
+        Pass 1: Count degrees.
+        Pass 2: Store edges where both vertices have degree > min_degree.
+        """
+        print(f"Reading {file_location} (Pass 1: Counting degrees)...")
+        degree_count = {}
+        
+        # Pass 1: Count degrees
+        with open(file_location, 'r') as f:
+            for line in f:
+                parts = line.strip().split()
+                u, v = parts[0], parts[1]
+                degree_count[u] = degree_count.get(u, 0) + 1
+                degree_count[v] = degree_count.get(v, 0) + 1
+
+        print(f"Pass 1 complete. Found {len(degree_count)} unique vertices.")
+        
+        # Pass 2: Filter and Build Graph
+        print(f"Reading {file_location} (Pass 2: Filtering and Building Graph)...")
+        edges = {}
+        vertices = set() 
+        with open(file_location, 'r') as f:
+            for line in f:
+                parts = line.strip().split()
+                u, v = parts[0], parts[1]
+                if degree_count.get(u, 0) > min_degree and degree_count.get(v, 0) > min_degree:
+                    w = random.uniform(0, 1) # can change to different distribution
+                    vertices.add(u)
+                    vertices.add(v)
+                    
+                    # Store only one direction (u < v) to match create_distance_matrix behavior
+                    # and avoid duplicate edges in processing
+                    p1, p2 = (u, v) if u < v else (v, u)
+                    if p1 not in edges:
+                        edges[p1] = {}
+                    edges[p1][p2] = w
+        size = sum(len(neighbors) for neighbors in edges.values())
+        vertex_list = list(vertices)
+        print(f"Pass 2 complete. Filtered Graph: |V|={len(vertex_list)}, |E|={size}")
+        
+        return vertex_list, size, edges

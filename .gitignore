@@ -132,3 +132,6 @@ Datasets/
 Results/test
 Results_buckets/
 Results_w_noise/
+
+datasets/
+my_results/

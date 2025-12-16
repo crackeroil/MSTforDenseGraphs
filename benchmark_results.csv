@@ -1,0 +1,368 @@
+Timestamp,Algorithm,Dataset,Epsilon,Phase,Round,Edges_Count,Duration_Seconds,Notes
+2025-12-16 17:59:06,MST-Dense-1,TwoCircles,0.1,Start,0,1124250,0,
+2025-12-16 17:59:17,MST-Dense-1,TwoCircles,0.1,End,Final,1499,11.032018,
+2025-12-16 17:59:18,MST-Dense-1,TwoMoons,0.1,Start,0,1124250,0,
+2025-12-16 17:59:27,MST-Dense-1,TwoMoons,0.1,End,Final,1499,8.953544,
+2025-12-16 17:59:28,MST-Dense-1,Varied,0.1,Start,0,1124250,0,
+2025-12-16 17:59:37,MST-Dense-1,Varied,0.1,End,Final,1499,8.865918,
+2025-12-16 17:59:38,MST-Dense-1,Aniso,0.1,Start,0,1124250,0,
+2025-12-16 17:59:47,MST-Dense-1,Aniso,0.1,End,Final,1499,8.791813,
+2025-12-16 17:59:48,MST-Dense-1,Blobs,0.1,Start,0,1124250,0,
+2025-12-16 17:59:57,MST-Dense-1,Blobs,0.1,End,Final,1499,8.941794,
+2025-12-16 17:59:58,MST-Dense-1,Random,0.1,Start,0,1124250,0,
+2025-12-16 18:00:06,MST-Dense-1,Random,0.1,End,Final,1499,8.809411,
+2025-12-16 18:00:11,MST-Dense-1,swissroll,0.1,Start,0,1124250,0,
+2025-12-16 18:00:20,MST-Dense-1,swissroll,0.1,End,Final,1499,8.798625,
+2025-12-16 18:00:25,MST-Dense-1,sshape,0.1,Start,0,1124250,0,
+2025-12-16 18:00:34,MST-Dense-1,sshape,0.1,End,Final,1499,8.885984,
+2025-12-16 18:01:27,MST-Dense-1,gplus_combined.txt,0.1,DataLoad,0,10830727,51.02501,
+2025-12-16 18:01:52,MST-Dense-1,gplus_combined.txt,0.1,Complete,Final,41608,25.540897,
+2025-12-16 18:01:55,MST-Dense-1,twitter_combined.txt,0.1,DataLoad,0,415337,2.635031,
+2025-12-16 18:01:58,MST-Dense-1,twitter_combined.txt,0.1,Complete,Final,10205,3.526282,
+2025-12-16 18:02:01,MST-Dense-1,kron_g500-logn16.txt,0.1,DataLoad,0,1499527,2.370675,
+2025-12-16 18:02:05,MST-Dense-1,kron_g500-logn16.txt,0.1,Complete,Final,6927,3.844499,
+2025-12-16 18:02:10,MST-Dense-1,TwoCircles,0.15,Start,0,1124250,0,
+2025-12-16 18:02:19,MST-Dense-1,TwoCircles,0.15,End,Final,1499,9.047483,
+2025-12-16 18:02:20,MST-Dense-1,TwoMoons,0.15,Start,0,1124250,0,
+2025-12-16 18:02:27,MST-Dense-1,TwoMoons,0.15,End,Final,1499,7.032377,
+2025-12-16 18:02:28,MST-Dense-1,Varied,0.15,Start,0,1124250,0,
+2025-12-16 18:02:35,MST-Dense-1,Varied,0.15,End,Final,1499,6.703878,
+2025-12-16 18:02:36,MST-Dense-1,Aniso,0.15,Start,0,1124250,0,
+2025-12-16 18:02:42,MST-Dense-1,Aniso,0.15,End,Final,1499,6.801763,
+2025-12-16 18:02:44,MST-Dense-1,Blobs,0.15,Start,0,1124250,0,
+2025-12-16 18:02:50,MST-Dense-1,Blobs,0.15,End,Final,1499,6.634122,
+2025-12-16 18:02:51,MST-Dense-1,Random,0.15,Start,0,1124250,0,
+2025-12-16 18:02:58,MST-Dense-1,Random,0.15,End,Final,1499,6.657108,
+2025-12-16 18:03:03,MST-Dense-1,swissroll,0.15,Start,0,1124250,0,
+2025-12-16 18:03:09,MST-Dense-1,swissroll,0.15,End,Final,1499,6.876745,
+2025-12-16 18:03:15,MST-Dense-1,sshape,0.15,Start,0,1124250,0,
+2025-12-16 18:03:22,MST-Dense-1,sshape,0.15,End,Final,1499,6.66321,
+2025-12-16 18:04:16,MST-Dense-1,gplus_combined.txt,0.15,DataLoad,0,10830727,53.34806,
+2025-12-16 18:04:38,MST-Dense-1,gplus_combined.txt,0.15,Complete,Final,41608,22.028337,
+2025-12-16 18:04:41,MST-Dense-1,twitter_combined.txt,0.15,DataLoad,0,415337,2.658349,
+2025-12-16 18:04:44,MST-Dense-1,twitter_combined.txt,0.15,Complete,Final,10205,2.996084,
+2025-12-16 18:04:47,MST-Dense-1,kron_g500-logn16.txt,0.15,DataLoad,0,1499527,2.55816,
+2025-12-16 18:04:50,MST-Dense-1,kron_g500-logn16.txt,0.15,Complete,Final,6927,3.000452,
+2025-12-16 18:04:55,MST-Dense-1,TwoCircles,0.2,Start,0,1124250,0,
+2025-12-16 18:05:03,MST-Dense-1,TwoCircles,0.2,End,Final,1499,8.16241,
+2025-12-16 18:05:04,MST-Dense-1,TwoMoons,0.2,Start,0,1124250,0,
+2025-12-16 18:05:10,MST-Dense-1,TwoMoons,0.2,End,Final,1499,5.869617,
+2025-12-16 18:05:11,MST-Dense-1,Varied,0.2,Start,0,1124250,0,
+2025-12-16 18:05:17,MST-Dense-1,Varied,0.2,End,Final,1499,6.019136,
+2025-12-16 18:05:18,MST-Dense-1,Aniso,0.2,Start,0,1124250,0,
+2025-12-16 18:05:24,MST-Dense-1,Aniso,0.2,End,Final,1499,5.784978,
+2025-12-16 18:05:25,MST-Dense-1,Blobs,0.2,Start,0,1124250,0,
+2025-12-16 18:05:30,MST-Dense-1,Blobs,0.2,End,Final,1499,5.737811,
+2025-12-16 18:05:31,MST-Dense-1,Random,0.2,Start,0,1124250,0,
+2025-12-16 18:05:37,MST-Dense-1,Random,0.2,End,Final,1499,5.64633,
+2025-12-16 18:05:42,MST-Dense-1,swissroll,0.2,Start,0,1124250,0,
+2025-12-16 18:05:48,MST-Dense-1,swissroll,0.2,End,Final,1499,6.297823,
+2025-12-16 18:05:54,MST-Dense-1,sshape,0.2,Start,0,1124250,0,
+2025-12-16 18:05:59,MST-Dense-1,sshape,0.2,End,Final,1499,5.53521,
+2025-12-16 18:06:58,MST-Dense-1,gplus_combined.txt,0.2,DataLoad,0,10830727,56.849525,
+2025-12-16 18:07:19,MST-Dense-1,gplus_combined.txt,0.2,Complete,Final,41608,21.119899,
+2025-12-16 18:07:22,MST-Dense-1,twitter_combined.txt,0.2,DataLoad,0,415337,2.885839,
+2025-12-16 18:07:25,MST-Dense-1,twitter_combined.txt,0.2,Complete,Final,10205,3.404603,
+2025-12-16 18:07:28,MST-Dense-1,kron_g500-logn16.txt,0.2,DataLoad,0,1499527,2.950626,
+2025-12-16 18:07:31,MST-Dense-1,kron_g500-logn16.txt,0.2,Complete,Final,6927,2.879147,
+2025-12-16 18:07:37,MST-Dense-1,TwoCircles,0.25,Start,0,1124250,0,
+2025-12-16 18:07:45,MST-Dense-1,TwoCircles,0.25,End,Final,1499,7.924485,
+2025-12-16 18:07:46,MST-Dense-1,TwoMoons,0.25,Start,0,1124250,0,
+2025-12-16 18:07:52,MST-Dense-1,TwoMoons,0.25,End,Final,1499,6.147712,
+2025-12-16 18:07:53,MST-Dense-1,Varied,0.25,Start,0,1124250,0,
+2025-12-16 18:07:58,MST-Dense-1,Varied,0.25,End,Final,1499,5.355401,
+2025-12-16 18:08:00,MST-Dense-1,Aniso,0.25,Start,0,1124250,0,
+2025-12-16 18:08:05,MST-Dense-1,Aniso,0.25,End,Final,1499,5.732766,
+2025-12-16 18:08:07,MST-Dense-1,Blobs,0.25,Start,0,1124250,0,
+2025-12-16 18:08:12,MST-Dense-1,Blobs,0.25,End,Final,1499,5.754125,
+2025-12-16 18:08:13,MST-Dense-1,Random,0.25,Start,0,1124250,0,
+2025-12-16 18:08:18,MST-Dense-1,Random,0.25,End,Final,1499,5.102057,
+2025-12-16 18:08:23,MST-Dense-1,swissroll,0.25,Start,0,1124250,0,
+2025-12-16 18:08:29,MST-Dense-1,swissroll,0.25,End,Final,1499,5.716891,
+2025-12-16 18:08:36,MST-Dense-1,sshape,0.25,Start,0,1124250,0,
+2025-12-16 18:08:42,MST-Dense-1,sshape,0.25,End,Final,1499,6.483935,
+2025-12-16 18:09:41,MST-Dense-1,gplus_combined.txt,0.25,DataLoad,0,10830727,57.560315,
+2025-12-16 18:10:02,MST-Dense-1,gplus_combined.txt,0.25,Complete,Final,41608,20.625868,
+2025-12-16 18:10:04,MST-Dense-1,twitter_combined.txt,0.25,DataLoad,0,415337,2.828797,
+2025-12-16 18:10:07,MST-Dense-1,twitter_combined.txt,0.25,Complete,Final,10205,2.996998,
+2025-12-16 18:10:10,MST-Dense-1,kron_g500-logn16.txt,0.25,DataLoad,0,1499527,2.729431,
+2025-12-16 18:10:13,MST-Dense-1,kron_g500-logn16.txt,0.25,Complete,Final,6927,2.495865,
+2025-12-16 18:10:18,MST-Dense-1,TwoCircles,0.3,Start,0,1124250,0,
+2025-12-16 18:10:26,MST-Dense-1,TwoCircles,0.3,End,Final,1499,7.394957,
+2025-12-16 18:10:27,MST-Dense-1,TwoMoons,0.3,Start,0,1124250,0,
+2025-12-16 18:10:32,MST-Dense-1,TwoMoons,0.3,End,Final,1499,5.484942,
+2025-12-16 18:10:33,MST-Dense-1,Varied,0.3,Start,0,1124250,0,
+2025-12-16 18:10:38,MST-Dense-1,Varied,0.3,End,Final,1499,5.110099,
+2025-12-16 18:10:40,MST-Dense-1,Aniso,0.3,Start,0,1124250,0,
+2025-12-16 18:10:44,MST-Dense-1,Aniso,0.3,End,Final,1499,5.022102,
+2025-12-16 18:10:46,MST-Dense-1,Blobs,0.3,Start,0,1124250,0,
+2025-12-16 18:10:51,MST-Dense-1,Blobs,0.3,End,Final,1499,5.267589,
+2025-12-16 18:10:52,MST-Dense-1,Random,0.3,Start,0,1124250,0,
+2025-12-16 18:10:57,MST-Dense-1,Random,0.3,End,Final,1499,5.135113,
+2025-12-16 18:11:02,MST-Dense-1,swissroll,0.3,Start,0,1124250,0,
+2025-12-16 18:11:07,MST-Dense-1,swissroll,0.3,End,Final,1499,5.250524,
+2025-12-16 18:11:13,MST-Dense-1,sshape,0.3,Start,0,1124250,0,
+2025-12-16 18:11:18,MST-Dense-1,sshape,0.3,End,Final,1499,5.111995,
+2025-12-16 18:12:19,MST-Dense-1,gplus_combined.txt,0.3,DataLoad,0,10830727,58.948324,
+2025-12-16 18:12:38,MST-Dense-1,gplus_combined.txt,0.3,Complete,Final,41608,18.82865,
+2025-12-16 18:12:40,MST-Dense-1,twitter_combined.txt,0.3,DataLoad,0,415337,2.817102,
+2025-12-16 18:12:43,MST-Dense-1,twitter_combined.txt,0.3,Complete,Final,10205,3.122393,
+2025-12-16 18:12:46,MST-Dense-1,kron_g500-logn16.txt,0.3,DataLoad,0,1499527,2.709526,
+2025-12-16 18:12:49,MST-Dense-1,kron_g500-logn16.txt,0.3,Complete,Final,6927,2.367292,
+2025-12-16 18:12:54,MST-Dense-1,TwoCircles,0.4,Start,0,1124250,0,
+2025-12-16 18:13:01,MST-Dense-1,TwoCircles,0.4,End,Final,1499,6.878459,
+2025-12-16 18:13:02,MST-Dense-1,TwoMoons,0.4,Start,0,1124250,0,
+2025-12-16 18:13:07,MST-Dense-1,TwoMoons,0.4,End,Final,1499,4.952733,
+2025-12-16 18:13:08,MST-Dense-1,Varied,0.4,Start,0,1124250,0,
+2025-12-16 18:13:13,MST-Dense-1,Varied,0.4,End,Final,1499,4.493671,
+2025-12-16 18:13:14,MST-Dense-1,Aniso,0.4,Start,0,1124250,0,
+2025-12-16 18:13:18,MST-Dense-1,Aniso,0.4,End,Final,1499,4.766825,
+2025-12-16 18:13:20,MST-Dense-1,Blobs,0.4,Start,0,1124250,0,
+2025-12-16 18:13:24,MST-Dense-1,Blobs,0.4,End,Final,1499,4.739714,
+2025-12-16 18:13:25,MST-Dense-1,Random,0.4,Start,0,1124250,0,
+2025-12-16 18:13:30,MST-Dense-1,Random,0.4,End,Final,1499,4.644848,
+2025-12-16 18:13:35,MST-Dense-1,swissroll,0.4,Start,0,1124250,0,
+2025-12-16 18:13:39,MST-Dense-1,swissroll,0.4,End,Final,1499,4.57438,
+2025-12-16 18:13:45,MST-Dense-1,sshape,0.4,Start,0,1124250,0,
+2025-12-16 18:13:50,MST-Dense-1,sshape,0.4,End,Final,1499,4.638489,
+2025-12-16 18:14:51,MST-Dense-1,gplus_combined.txt,0.4,DataLoad,0,10830727,59.450842,
+2025-12-16 18:15:11,MST-Dense-1,gplus_combined.txt,0.4,Complete,Final,41608,20.513287,
+2025-12-16 18:15:14,MST-Dense-1,twitter_combined.txt,0.4,DataLoad,0,415337,2.845089,
+2025-12-16 18:15:17,MST-Dense-1,twitter_combined.txt,0.4,Complete,Final,10205,3.103437,
+2025-12-16 18:15:20,MST-Dense-1,kron_g500-logn16.txt,0.4,DataLoad,0,1499527,2.768476,
+2025-12-16 18:15:22,MST-Dense-1,kron_g500-logn16.txt,0.4,Complete,Final,6927,2.132558,
+2025-12-16 18:15:28,MST-Dense-1,TwoCircles,0.5,Start,0,1124250,0,
+2025-12-16 18:15:34,MST-Dense-1,TwoCircles,0.5,End,Final,1499,6.256713,
+2025-12-16 18:15:35,MST-Dense-1,TwoMoons,0.5,Start,0,1124250,0,
+2025-12-16 18:15:40,MST-Dense-1,TwoMoons,0.5,End,Final,1499,4.702446,
+2025-12-16 18:15:41,MST-Dense-1,Varied,0.5,Start,0,1124250,0,
+2025-12-16 18:15:45,MST-Dense-1,Varied,0.5,End,Final,1499,4.294088,
+2025-12-16 18:15:46,MST-Dense-1,Aniso,0.5,Start,0,1124250,0,
+2025-12-16 18:15:50,MST-Dense-1,Aniso,0.5,End,Final,1499,4.338343,
+2025-12-16 18:15:51,MST-Dense-1,Blobs,0.5,Start,0,1124250,0,
+2025-12-16 18:15:56,MST-Dense-1,Blobs,0.5,End,Final,1499,4.301581,
+2025-12-16 18:15:57,MST-Dense-1,Random,0.5,Start,0,1124250,0,
+2025-12-16 18:16:01,MST-Dense-1,Random,0.5,End,Final,1499,4.309741,
+2025-12-16 18:16:06,MST-Dense-1,swissroll,0.5,Start,0,1124250,0,
+2025-12-16 18:16:10,MST-Dense-1,swissroll,0.5,End,Final,1499,4.328438,
+2025-12-16 18:16:16,MST-Dense-1,sshape,0.5,Start,0,1124250,0,
+2025-12-16 18:16:20,MST-Dense-1,sshape,0.5,End,Final,1499,4.248466,
+2025-12-16 18:17:22,MST-Dense-1,gplus_combined.txt,0.5,DataLoad,0,10830727,59.765807,
+2025-12-16 18:17:59,MST-Dense-1,gplus_combined.txt,0.5,Complete,Final,41608,37.551874,
+2025-12-16 18:18:02,MST-Dense-1,twitter_combined.txt,0.5,DataLoad,0,415337,2.872441,
+2025-12-16 18:18:05,MST-Dense-1,twitter_combined.txt,0.5,Complete,Final,10205,2.884359,
+2025-12-16 18:18:08,MST-Dense-1,kron_g500-logn16.txt,0.5,DataLoad,0,1499527,2.737175,
+2025-12-16 18:18:10,MST-Dense-1,kron_g500-logn16.txt,0.5,Complete,Final,6927,2.481181,
+2025-12-16 18:18:15,MST-Fast,TwoCircles,0.1,Start,0,1124250,0,
+2025-12-16 18:18:24,MST-Fast,TwoCircles,0.1,Use_Pyspark_Map,1,1500,6.734025,k=19
+2025-12-16 18:18:26,MST-Fast,TwoCircles,0.1,Round,1,17643,10.329658,Removed 1106607
+2025-12-16 18:18:27,MST-Fast,TwoCircles,0.1,Use_Pyspark_Map,2,1500,1.279583,k=4
+2025-12-16 18:18:28,MST-Fast,TwoCircles,0.1,Round,2,3525,1.799245,Removed 14118
+2025-12-16 18:18:29,MST-Fast,TwoCircles,0.1,Use_Pyspark_Map,3,1500,1.074985,k=2
+2025-12-16 18:18:29,MST-Fast,TwoCircles,0.1,Round,3,1870,1.106588,Removed 1655
+2025-12-16 18:18:29,MST-Fast,TwoCircles,0.1,Complete,Final,1499,13.309251,
+2025-12-16 18:18:30,MST-Fast,TwoMoons,0.1,Start,0,1124250,0,
+2025-12-16 18:18:37,MST-Fast,TwoMoons,0.1,Use_Pyspark_Map,1,1500,4.904429,k=19
+2025-12-16 18:18:38,MST-Fast,TwoMoons,0.1,Round,1,17529,8.517937,Removed 1106721
+2025-12-16 18:18:40,MST-Fast,TwoMoons,0.1,Use_Pyspark_Map,2,1500,1.250755,k=4
+2025-12-16 18:18:40,MST-Fast,TwoMoons,0.1,Round,2,3517,1.672238,Removed 14012
+2025-12-16 18:18:41,MST-Fast,TwoMoons,0.1,Use_Pyspark_Map,3,1500,1.040077,k=2
+2025-12-16 18:18:41,MST-Fast,TwoMoons,0.1,Round,3,1888,1.064513,Removed 1629
+2025-12-16 18:18:41,MST-Fast,TwoMoons,0.1,Complete,Final,1499,11.351353,
+2025-12-16 18:18:42,MST-Fast,Varied,0.1,Start,0,1124250,0,
+2025-12-16 18:18:49,MST-Fast,Varied,0.1,Use_Pyspark_Map,1,1500,4.765961,k=19
+2025-12-16 18:18:50,MST-Fast,Varied,0.1,Round,1,17841,8.248284,Removed 1106409
+2025-12-16 18:18:52,MST-Fast,Varied,0.1,Use_Pyspark_Map,2,1500,1.321255,k=4
+2025-12-16 18:18:52,MST-Fast,Varied,0.1,Round,2,3698,1.743733,Removed 14143
+2025-12-16 18:18:53,MST-Fast,Varied,0.1,Use_Pyspark_Map,3,1500,0.962506,k=2
+2025-12-16 18:18:53,MST-Fast,Varied,0.1,Round,3,1921,0.984755,Removed 1777
+2025-12-16 18:18:53,MST-Fast,Varied,0.1,Complete,Final,1499,11.075472,
+2025-12-16 18:18:54,MST-Fast,Aniso,0.1,Start,0,1124250,0,
+2025-12-16 18:19:01,MST-Fast,Aniso,0.1,Use_Pyspark_Map,1,1500,4.707368,k=19
+2025-12-16 18:19:02,MST-Fast,Aniso,0.1,Round,1,17501,8.344337,Removed 1106749
+2025-12-16 18:19:04,MST-Fast,Aniso,0.1,Use_Pyspark_Map,2,1500,1.216255,k=4
+2025-12-16 18:19:04,MST-Fast,Aniso,0.1,Round,2,3552,1.710238,Removed 13949
+2025-12-16 18:19:05,MST-Fast,Aniso,0.1,Use_Pyspark_Map,3,1500,0.969553,k=2
+2025-12-16 18:19:05,MST-Fast,Aniso,0.1,Round,3,1865,0.992414,Removed 1687
+2025-12-16 18:19:05,MST-Fast,Aniso,0.1,Complete,Final,1499,11.132534,
+2025-12-16 18:19:06,MST-Fast,Blobs,0.1,Start,0,1124250,0,
+2025-12-16 18:19:14,MST-Fast,Blobs,0.1,Use_Pyspark_Map,1,1500,6.059422,k=19
+2025-12-16 18:19:16,MST-Fast,Blobs,0.1,Round,1,17692,9.587258,Removed 1106558
+2025-12-16 18:19:17,MST-Fast,Blobs,0.1,Use_Pyspark_Map,2,1500,1.167244,k=4
+2025-12-16 18:19:17,MST-Fast,Blobs,0.1,Round,2,3573,1.59187,Removed 14119
+2025-12-16 18:19:18,MST-Fast,Blobs,0.1,Use_Pyspark_Map,3,1500,0.973056,k=2
+2025-12-16 18:19:18,MST-Fast,Blobs,0.1,Round,3,1910,0.996219,Removed 1663
+2025-12-16 18:19:19,MST-Fast,Blobs,0.1,Complete,Final,1499,12.26401,
+2025-12-16 18:19:20,MST-Fast,Random,0.1,Start,0,1124250,0,
+2025-12-16 18:19:26,MST-Fast,Random,0.1,Use_Pyspark_Map,1,1500,4.394733,k=19
+2025-12-16 18:19:27,MST-Fast,Random,0.1,Round,1,18586,7.917831,Removed 1105664
+2025-12-16 18:19:29,MST-Fast,Random,0.1,Use_Pyspark_Map,2,1500,1.123777,k=4
+2025-12-16 18:19:29,MST-Fast,Random,0.1,Round,2,3626,1.539566,Removed 14960
+2025-12-16 18:19:30,MST-Fast,Random,0.1,Use_Pyspark_Map,3,1500,0.95424,k=2
+2025-12-16 18:19:30,MST-Fast,Random,0.1,Round,3,1943,0.977477,Removed 1683
+2025-12-16 18:19:30,MST-Fast,Random,0.1,Complete,Final,1499,10.53489,
+2025-12-16 18:19:35,MST-Fast,swissroll,0.1,Start,0,1124250,0,
+2025-12-16 18:19:42,MST-Fast,swissroll,0.1,Use_Pyspark_Map,1,1500,4.444744,k=19
+2025-12-16 18:19:43,MST-Fast,swissroll,0.1,Round,1,18498,8.127845,Removed 1105752
+2025-12-16 18:19:44,MST-Fast,swissroll,0.1,Use_Pyspark_Map,2,1500,1.092977,k=4
+2025-12-16 18:19:45,MST-Fast,swissroll,0.1,Round,2,3656,1.58519,Removed 14842
+2025-12-16 18:19:46,MST-Fast,swissroll,0.1,Use_Pyspark_Map,3,1500,1.003279,k=2
+2025-12-16 18:19:46,MST-Fast,swissroll,0.1,Round,3,1943,1.027081,Removed 1713
+2025-12-16 18:19:46,MST-Fast,swissroll,0.1,Complete,Final,1499,10.837106,
+2025-12-16 18:19:52,MST-Fast,sshape,0.1,Start,0,1124250,0,
+2025-12-16 18:19:58,MST-Fast,sshape,0.1,Use_Pyspark_Map,1,1500,4.659466,k=19
+2025-12-16 18:20:00,MST-Fast,sshape,0.1,Round,1,18491,8.182747,Removed 1105759
+2025-12-16 18:20:01,MST-Fast,sshape,0.1,Use_Pyspark_Map,2,1500,1.094336,k=4
+2025-12-16 18:20:01,MST-Fast,sshape,0.1,Round,2,3636,1.58052,Removed 14855
+2025-12-16 18:20:02,MST-Fast,sshape,0.1,Use_Pyspark_Map,3,1500,0.951949,k=2
+2025-12-16 18:20:02,MST-Fast,sshape,0.1,Round,3,1938,0.976129,Removed 1698
+2025-12-16 18:20:02,MST-Fast,sshape,0.1,Complete,Final,1499,10.830216,
+2025-12-16 18:21:02,MST-Fast,gplus_combined.txt,0.1,DataLoad,0,10830727,58.358807,
+2025-12-16 18:21:02,MST-Fast,gplus_combined.txt,0.1,Start,0,10830727,0,
+2025-12-16 18:27:41,MST-Fast,gplus_combined.txt,0.1,Use_Pyspark_Map,1,41383,393.815629,k=10
+2025-12-16 18:28:10,MST-Fast,gplus_combined.txt,0.1,Round,1,255044,427.318118,Removed 10575683
+2025-12-16 18:32:27,MST-Fast,gplus_combined.txt,0.1,Use_Pyspark_Map,2,41383,257.174953,k=2
+2025-12-16 18:32:31,MST-Fast,gplus_combined.txt,0.1,Round,2,53296,261.674478,Removed 201748
+2025-12-16 18:32:47,MST-Fast,gplus_combined.txt,0.1,Complete,Final,41608,705.048128,
+2025-12-16 18:32:50,MST-Fast,twitter_combined.txt,0.1,DataLoad,0,415337,2.474621,
+2025-12-16 18:32:50,MST-Fast,twitter_combined.txt,0.1,Start,0,415337,0,
+2025-12-16 18:33:00,MST-Fast,twitter_combined.txt,0.1,Use_Pyspark_Map,1,10018,9.643319,k=5
+2025-12-16 18:33:00,MST-Fast,twitter_combined.txt,0.1,Round,1,33418,10.489856,Removed 381919
+2025-12-16 18:33:10,MST-Fast,twitter_combined.txt,0.1,Use_Pyspark_Map,2,10018,9.892823,k=2
+2025-12-16 18:33:10,MST-Fast,twitter_combined.txt,0.1,Round,2,13745,10.067438,Removed 19673
+2025-12-16 18:33:12,MST-Fast,twitter_combined.txt,0.1,Complete,Final,10205,22.115776,
+2025-12-16 18:33:14,MST-Fast,kron_g500-logn16.txt,0.1,DataLoad,0,1499527,2.573689,
+2025-12-16 18:33:14,MST-Fast,kron_g500-logn16.txt,0.1,Start,0,1499527,0,
+2025-12-16 18:33:21,MST-Fast,kron_g500-logn16.txt,0.1,Use_Pyspark_Map,1,6904,6.19153,k=10
+2025-12-16 18:33:24,MST-Fast,kron_g500-logn16.txt,0.1,Round,1,43223,9.527454,Removed 1456304
+2025-12-16 18:33:30,MST-Fast,kron_g500-logn16.txt,0.1,Use_Pyspark_Map,2,6904,5.72799,k=2
+2025-12-16 18:33:30,MST-Fast,kron_g500-logn16.txt,0.1,Round,2,8933,6.332237,Removed 34290
+2025-12-16 18:33:31,MST-Fast,kron_g500-logn16.txt,0.1,Complete,Final,6927,16.346353,
+2025-12-16 18:33:36,MST-Fast,TwoCircles,0.15,Start,0,1124250,0,
+2025-12-16 18:33:45,MST-Fast,TwoCircles,0.15,Use_Pyspark_Map,1,1500,6.375248,k=16
+2025-12-16 18:33:47,MST-Fast,TwoCircles,0.15,Round,1,14574,10.156162,Removed 1109676
+2025-12-16 18:33:48,MST-Fast,TwoCircles,0.15,Use_Pyspark_Map,2,1500,1.368964,k=3
+2025-12-16 18:33:48,MST-Fast,TwoCircles,0.15,Round,2,2591,1.795652,Removed 11983
+2025-12-16 18:33:49,MST-Fast,TwoCircles,0.15,Complete,Final,1499,12.102374,
+2025-12-16 18:33:50,MST-Fast,TwoMoons,0.15,Start,0,1124250,0,
+2025-12-16 18:33:56,MST-Fast,TwoMoons,0.15,Use_Pyspark_Map,1,1500,4.389657,k=16
+2025-12-16 18:33:58,MST-Fast,TwoMoons,0.15,Round,1,14622,7.958457,Removed 1109628
+2025-12-16 18:33:59,MST-Fast,TwoMoons,0.15,Use_Pyspark_Map,2,1500,1.306363,k=3
+2025-12-16 18:33:59,MST-Fast,TwoMoons,0.15,Round,2,2643,1.739402,Removed 11979
+2025-12-16 18:33:59,MST-Fast,TwoMoons,0.15,Complete,Final,1499,9.822916,
+2025-12-16 18:34:00,MST-Fast,Varied,0.15,Start,0,1124250,0,
+2025-12-16 18:34:07,MST-Fast,Varied,0.15,Use_Pyspark_Map,1,1500,4.372649,k=16
+2025-12-16 18:34:08,MST-Fast,Varied,0.15,Round,1,14982,8.010929,Removed 1109268
+2025-12-16 18:34:10,MST-Fast,Varied,0.15,Use_Pyspark_Map,2,1500,1.238698,k=3
+2025-12-16 18:34:10,MST-Fast,Varied,0.15,Round,2,2706,1.659598,Removed 12276
+2025-12-16 18:34:10,MST-Fast,Varied,0.15,Complete,Final,1499,9.816871,
+2025-12-16 18:34:11,MST-Fast,Aniso,0.15,Start,0,1124250,0,
+2025-12-16 18:34:17,MST-Fast,Aniso,0.15,Use_Pyspark_Map,1,1500,4.246843,k=16
+2025-12-16 18:34:19,MST-Fast,Aniso,0.15,Round,1,14446,7.797073,Removed 1109804
+2025-12-16 18:34:20,MST-Fast,Aniso,0.15,Use_Pyspark_Map,2,1500,1.216772,k=3
+2025-12-16 18:34:21,MST-Fast,Aniso,0.15,Round,2,2654,1.625825,Removed 11792
+2025-12-16 18:34:21,MST-Fast,Aniso,0.15,Complete,Final,1499,9.538276,
+2025-12-16 18:34:22,MST-Fast,Blobs,0.15,Start,0,1124250,0,
+2025-12-16 18:34:30,MST-Fast,Blobs,0.15,Use_Pyspark_Map,1,1500,5.868269,k=16
+2025-12-16 18:34:31,MST-Fast,Blobs,0.15,Round,1,15005,9.440367,Removed 1109245
+2025-12-16 18:34:32,MST-Fast,Blobs,0.15,Use_Pyspark_Map,2,1500,1.200946,k=3
+2025-12-16 18:34:33,MST-Fast,Blobs,0.15,Round,2,2627,1.613462,Removed 12378
+2025-12-16 18:34:33,MST-Fast,Blobs,0.15,Complete,Final,1499,11.173942,
+2025-12-16 18:34:34,MST-Fast,Random,0.15,Start,0,1124250,0,
+2025-12-16 18:34:40,MST-Fast,Random,0.15,Use_Pyspark_Map,1,1500,4.185789,k=16
+2025-12-16 18:34:42,MST-Fast,Random,0.15,Round,1,15345,7.83944,Removed 1108905
+2025-12-16 18:34:43,MST-Fast,Random,0.15,Use_Pyspark_Map,2,1500,1.081147,k=3
+2025-12-16 18:34:43,MST-Fast,Random,0.15,Round,2,2727,1.547669,Removed 12618
+2025-12-16 18:34:43,MST-Fast,Random,0.15,Complete,Final,1499,9.498928,
+2025-12-16 18:34:48,MST-Fast,swissroll,0.15,Start,0,1124250,0,
+2025-12-16 18:34:54,MST-Fast,swissroll,0.15,Use_Pyspark_Map,1,1500,4.146724,k=16
+2025-12-16 18:34:56,MST-Fast,swissroll,0.15,Round,1,15396,7.69164,Removed 1108854
+2025-12-16 18:34:57,MST-Fast,swissroll,0.15,Use_Pyspark_Map,2,1500,1.100608,k=3
+2025-12-16 18:34:57,MST-Fast,swissroll,0.15,Round,2,2729,1.518762,Removed 12667
+2025-12-16 18:34:58,MST-Fast,swissroll,0.15,Complete,Final,1499,9.318723,
+2025-12-16 18:35:03,MST-Fast,sshape,0.15,Start,0,1124250,0,
+2025-12-16 18:35:09,MST-Fast,sshape,0.15,Use_Pyspark_Map,1,1500,4.061958,k=16
+2025-12-16 18:35:11,MST-Fast,sshape,0.15,Round,1,15389,7.710593,Removed 1108861
+2025-12-16 18:35:12,MST-Fast,sshape,0.15,Use_Pyspark_Map,2,1500,1.141245,k=3
+2025-12-16 18:35:12,MST-Fast,sshape,0.15,Round,2,2719,1.556701,Removed 12670
+2025-12-16 18:35:13,MST-Fast,sshape,0.15,Complete,Final,1499,9.377847,
+2025-12-16 18:36:10,MST-Fast,gplus_combined.txt,0.15,DataLoad,0,10830727,55.84111,
+2025-12-16 18:36:10,MST-Fast,gplus_combined.txt,0.15,Start,0,10830727,0,
+2025-12-16 18:44:00,MST-Fast,gplus_combined.txt,0.15,Use_Pyspark_Map,1,41383,465.844844,k=8
+2025-12-16 18:44:30,MST-Fast,gplus_combined.txt,0.15,Round,1,202972,499.812825,Removed 10627755
+2025-12-16 18:44:59,MST-Fast,gplus_combined.txt,0.15,Complete,Final,41608,528.617297,
+2025-12-16 18:45:01,MST-Fast,twitter_combined.txt,0.15,DataLoad,0,415337,2.555601,
+2025-12-16 18:45:01,MST-Fast,twitter_combined.txt,0.15,Start,0,415337,0,
+2025-12-16 18:45:11,MST-Fast,twitter_combined.txt,0.15,Use_Pyspark_Map,1,10018,9.542692,k=4
+2025-12-16 18:45:12,MST-Fast,twitter_combined.txt,0.15,Round,1,26480,10.418656,Removed 388857
+2025-12-16 18:45:13,MST-Fast,twitter_combined.txt,0.15,Complete,Final,10205,12.372569,
+2025-12-16 18:45:16,MST-Fast,kron_g500-logn16.txt,0.15,DataLoad,0,1499527,2.547054,
+2025-12-16 18:45:16,MST-Fast,kron_g500-logn16.txt,0.15,Start,0,1499527,0,
+2025-12-16 18:45:23,MST-Fast,kron_g500-logn16.txt,0.15,Use_Pyspark_Map,1,6904,6.532156,k=8
+2025-12-16 18:45:26,MST-Fast,kron_g500-logn16.txt,0.15,Round,1,34424,9.846653,Removed 1465103
+2025-12-16 18:45:30,MST-Fast,kron_g500-logn16.txt,0.15,Use_Pyspark_Map,2,6904,4.108052,k=2
+2025-12-16 18:45:31,MST-Fast,kron_g500-logn16.txt,0.15,Round,2,8976,4.648396,Removed 25448
+2025-12-16 18:45:31,MST-Fast,kron_g500-logn16.txt,0.15,Complete,Final,6927,14.999146,
+2025-12-16 18:45:37,MST-Fast,TwoCircles,0.2,Start,0,1124250,0,
+2025-12-16 18:45:44,MST-Fast,TwoCircles,0.2,Use_Pyspark_Map,1,1500,6.021936,k=14
+2025-12-16 18:45:46,MST-Fast,TwoCircles,0.2,Round,1,12931,9.509932,Removed 1111319
+2025-12-16 18:45:47,MST-Fast,TwoCircles,0.2,Use_Pyspark_Map,2,1500,1.300782,k=2
+2025-12-16 18:45:48,MST-Fast,TwoCircles,0.2,Round,2,1822,1.700265,Removed 11109
+2025-12-16 18:45:48,MST-Fast,TwoCircles,0.2,Complete,Final,1499,11.289828,
+2025-12-16 18:45:49,MST-Fast,TwoMoons,0.2,Start,0,1124250,0,
+2025-12-16 18:45:55,MST-Fast,TwoMoons,0.2,Use_Pyspark_Map,1,1500,4.337938,k=14
+2025-12-16 18:45:57,MST-Fast,TwoMoons,0.2,Round,1,12785,7.803484,Removed 1111465
+2025-12-16 18:45:58,MST-Fast,TwoMoons,0.2,Use_Pyspark_Map,2,1500,1.271284,k=2
+2025-12-16 18:45:58,MST-Fast,TwoMoons,0.2,Round,2,1840,1.715681,Removed 10945
+2025-12-16 18:45:58,MST-Fast,TwoMoons,0.2,Complete,Final,1499,9.615716,
+2025-12-16 18:45:59,MST-Fast,Varied,0.2,Start,0,1124250,0,
+2025-12-16 18:46:06,MST-Fast,Varied,0.2,Use_Pyspark_Map,1,1500,4.53143,k=14
+2025-12-16 18:46:08,MST-Fast,Varied,0.2,Round,1,13040,8.145454,Removed 1111210
+2025-12-16 18:46:09,MST-Fast,Varied,0.2,Use_Pyspark_Map,2,1500,1.385593,k=2
+2025-12-16 18:46:09,MST-Fast,Varied,0.2,Round,2,1875,1.808944,Removed 11165
+2025-12-16 18:46:10,MST-Fast,Varied,0.2,Complete,Final,1499,10.060399,
+2025-12-16 18:46:11,MST-Fast,Aniso,0.2,Start,0,1124250,0,
+2025-12-16 18:46:17,MST-Fast,Aniso,0.2,Use_Pyspark_Map,1,1500,4.786952,k=14
+2025-12-16 18:46:19,MST-Fast,Aniso,0.2,Round,1,12783,8.549297,Removed 1111467
+2025-12-16 18:46:20,MST-Fast,Aniso,0.2,Use_Pyspark_Map,2,1500,1.350327,k=2
+2025-12-16 18:46:21,MST-Fast,Aniso,0.2,Round,2,1867,1.765667,Removed 10916
+2025-12-16 18:46:21,MST-Fast,Aniso,0.2,Complete,Final,1499,10.406158,
+2025-12-16 18:46:22,MST-Fast,Blobs,0.2,Start,0,1124250,0,
+2025-12-16 18:46:31,MST-Fast,Blobs,0.2,Use_Pyspark_Map,1,1500,6.928656,k=14
+2025-12-16 18:46:33,MST-Fast,Blobs,0.2,Round,1,13172,10.942729,Removed 1111078
+2025-12-16 18:46:34,MST-Fast,Blobs,0.2,Use_Pyspark_Map,2,1500,1.291172,k=2
+2025-12-16 18:46:35,MST-Fast,Blobs,0.2,Round,2,1863,1.75774,Removed 11309
+2025-12-16 18:46:35,MST-Fast,Blobs,0.2,Complete,Final,1499,12.799043,
+2025-12-16 18:46:36,MST-Fast,Random,0.2,Start,0,1124250,0,
+2025-12-16 18:46:42,MST-Fast,Random,0.2,Use_Pyspark_Map,1,1500,4.128395,k=14
+2025-12-16 18:46:44,MST-Fast,Random,0.2,Round,1,13529,7.650884,Removed 1110721
+2025-12-16 18:46:45,MST-Fast,Random,0.2,Use_Pyspark_Map,2,1500,1.159626,k=2
+2025-12-16 18:46:45,MST-Fast,Random,0.2,Round,2,1880,1.592814,Removed 11649
+2025-12-16 18:46:45,MST-Fast,Random,0.2,Complete,Final,1499,9.33975,
+2025-12-16 18:46:50,MST-Fast,swissroll,0.2,Start,0,1124250,0,
+2025-12-16 18:46:56,MST-Fast,swissroll,0.2,Use_Pyspark_Map,1,1500,4.309137,k=14
+2025-12-16 18:46:58,MST-Fast,swissroll,0.2,Round,1,13531,7.773774,Removed 1110719
+2025-12-16 18:46:59,MST-Fast,swissroll,0.2,Use_Pyspark_Map,2,1500,1.08256,k=2
+2025-12-16 18:46:59,MST-Fast,swissroll,0.2,Round,2,1841,1.47786,Removed 11690
+2025-12-16 18:46:59,MST-Fast,swissroll,0.2,Complete,Final,1499,9.33082,
+2025-12-16 18:47:05,MST-Fast,sshape,0.2,Start,0,1124250,0,
+2025-12-16 18:47:11,MST-Fast,sshape,0.2,Use_Pyspark_Map,1,1500,4.084668,k=14
+2025-12-16 18:47:13,MST-Fast,sshape,0.2,Round,1,13572,7.668784,Removed 1110678
+2025-12-16 18:47:14,MST-Fast,sshape,0.2,Use_Pyspark_Map,2,1500,1.185572,k=2
+2025-12-16 18:47:14,MST-Fast,sshape,0.2,Round,2,1872,1.596121,Removed 11700
+2025-12-16 18:47:14,MST-Fast,sshape,0.2,Complete,Final,1499,9.364472,
+2025-12-16 18:48:14,MST-Fast,gplus_combined.txt,0.2,DataLoad,0,10830727,58.312235,
+2025-12-16 18:48:14,MST-Fast,gplus_combined.txt,0.2,Start,0,10830727,0,
+2025-12-16 19:29:02,MST-Fast,gplus_combined.txt,0.2,Use_Pyspark_Map,1,41383,2442.686607,k=6
+2025-12-16 19:29:27,MST-Fast,gplus_combined.txt,0.2,Round,1,151286,2472.707083,Removed 10679441
+2025-12-16 19:29:50,MST-Fast,gplus_combined.txt,0.2,Complete,Final,41608,2495.906404,
+2025-12-16 19:29:53,MST-Fast,twitter_combined.txt,0.2,DataLoad,0,415337,2.347803,
+2025-12-16 19:29:53,MST-Fast,twitter_combined.txt,0.2,Start,0,415337,0,
+2025-12-16 19:30:04,MST-Fast,twitter_combined.txt,0.2,Use_Pyspark_Map,1,10018,11.541224,k=3
+2025-12-16 19:30:05,MST-Fast,twitter_combined.txt,0.2,Round,1,19751,12.300475,Removed 395586
+2025-12-16 19:30:07,MST-Fast,twitter_combined.txt,0.2,Complete,Final,10205,14.175553,
+2025-12-16 19:30:09,MST-Fast,kron_g500-logn16.txt,0.2,DataLoad,0,1499527,2.302264,
+2025-12-16 19:30:09,MST-Fast,kron_g500-logn16.txt,0.2,Start,0,1499527,0,
+2025-12-16 19:30:16,MST-Fast,kron_g500-logn16.txt,0.2,Use_Pyspark_Map,1,6904,6.166569,k=7
+2025-12-16 19:30:18,MST-Fast,kron_g500-logn16.txt,0.2,Round,1,30030,9.09726,Removed 1469497
+2025-12-16 19:30:19,MST-Fast,kron_g500-logn16.txt,0.2,Complete,Final,6927,10.026833,
