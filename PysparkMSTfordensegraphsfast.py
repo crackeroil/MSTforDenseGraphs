@@ -225,6 +225,15 @@ def get_edges(U, V, E):
         edge_list.append(edge)
     return U, V, edge_list
 
+def flatten_edges(E_dict):
+    """
+    Flattens the dict of dicts edge representation to a list of tuples
+    """
+    flat_edges = []
+    for u, neighbors in E_dict.items():
+        for v, w in neighbors.items():
+            flat_edges.append((u, v, w))
+    return flat_edges
 
 def reduce_edges(sc, vertices, E, c, epsilon, logger=None, dataset_name=None, round_num=0):
     """
@@ -255,7 +264,7 @@ def reduce_edges(sc, vertices, E, c, epsilon, logger=None, dataset_name=None, ro
     duration_reduce = (datetime.now() - start_reduce).total_seconds()
     
     if logger:
-        logger.log('MST-Fast', dataset_name, epsilon, 'Use_Pyspark_Map', round_num, len(E), duration_reduce, f'k={k}')
+        logger.log('MST-Fast', dataset_name, epsilon, 'Map-Reduce Step', round_num, len(flatten_edges(E)), duration_reduce, f'k={k}')
     
     # Unpersist to free memory
     E_broadcast.unpersist()
@@ -385,7 +394,7 @@ def main():
         print(f'Start creating Distance Matrix for {dataset_name}...')
         E, size, vertex_coordinates = create_distance_matrix(dataset[0][0])
         plotter.set_vertex_coordinates(vertex_coordinates)
-        plotter.set_dataset(dataset_name)
+        plotter.set_dataset(dataset_name + '_eps' + str(args.epsilon))
         plotter.update_string()
         plotter.reset_round()
         V = list(range(len(vertex_coordinates)))

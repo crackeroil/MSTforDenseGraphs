@@ -12,6 +12,11 @@ from Plotter import *
 from DataReader import *
 from BenchmarkLogger import *
 
+import sys
+
+# A lot of communication rounds happen for small epsilon values
+sys.setrecursionlimit(10**6)
+
 
 def get_clustering_data():
     """
@@ -165,7 +170,7 @@ def flatten_edges(E_dict):
     return flat_edges
 
 
-def mst_dense_1(sc, V_count, edges, epsilon, recursion_depth=0):
+def mst_dense_1(sc, V_count, edges, epsilon, logger=None, dataset_name=None, recursion_depth=0):
     """
     Implements the MST-Dense-1 algorithm using PySpark
     :param sc: SparkContext
@@ -177,15 +182,11 @@ def mst_dense_1(sc, V_count, edges, epsilon, recursion_depth=0):
     n = V_count
     m = len(edges)
     y = n ** (1 + epsilon)
-    
-    print(f"Recursion depth: {recursion_depth}, |E|: {m}, Threshold y: {y}")
 
     if m <= y:
-        print("Base case reached: solving MST locally.")
         return find_mst(edges)
     
     x = math.ceil(m / y)
-    print(f"Partitioning into {x} sets.")
     
     # Randomly partition E into x sets
     # We use PySpark to parallelize this
@@ -195,13 +196,18 @@ def mst_dense_1(sc, V_count, edges, epsilon, recursion_depth=0):
     # Group by key to form partitions
     # Compute MST for each partition
     # Collect results
+    start_reduce = datetime.now()
     sub_msts_edges = rdd_edges.map(lambda e: (random.randint(0, x-1), e)) \
                               .groupByKey() \
                               .mapValues(compute_local_mst) \
                               .flatMap(lambda pair: pair[1]) \
                               .collect()
+    duration_reduce = (datetime.now() - start_reduce).total_seconds()
+
+    if logger:
+        logger.log('MST-Dense-1', dataset_name, epsilon, 'Map-Reduce Step', recursion_depth, len(edges), duration_reduce, f'x={x}')
     
-    return mst_dense_1(sc, V_count, sub_msts_edges, epsilon, recursion_depth + 1)
+    return mst_dense_1(sc, V_count, sub_msts_edges, epsilon, logger, dataset_name, recursion_depth + 1)
 
 def main():
     """
@@ -211,8 +217,6 @@ def main():
     parser.add_argument('--test', help='Used for smaller dataset and testing', action='store_true')
     parser.add_argument('--epsilon', help='epsilon [default=1/8]', type=float, default=1 / 8)
     args = parser.parse_args()
-
-    print('Start generating MST')
     
     # Initialize Spark with increased memory
     conf = SparkConf().setAppName("MST-Dense-1").setMaster("local[*]").set("spark.driver.memory", "16g")
@@ -221,7 +225,6 @@ def main():
     logger = BenchmarkLogger()
 
     start_time = datetime.now()
-    print('Starting time:', start_time)
 
     datasets_syn = get_clustering_data()
     names_datasets = ['TwoCircles', 'TwoMoons', 'Varied', 'Aniso', 'Blobs', 'Random', 'swissroll', 'sshape']
@@ -238,19 +241,14 @@ def main():
     for dataset in datasets_syn:
         timestamp = datetime.now()
         dataset_name = names_datasets[cnt]
-        print(f'Start creating Distance Matrix for {dataset_name}...')
         E_dict, size, vertex_coordinates = create_distance_matrix(dataset[0][0])
         
         plotter.set_vertex_coordinates(vertex_coordinates)
-        plotter.set_dataset(dataset_name)
+        plotter.set_dataset(dataset_name + '_eps' + str(args.epsilon))
         plotter.update_string()
         plotter.reset_round()
         
         V_count = len(vertex_coordinates)
-        print('Size dataset: ', V_count)
-        print('Created distance matrix in: ', datetime.now() - timestamp)
-        
-        print('Start creating MST (Dense-1)...')
         timestamp = datetime.now()
         
         # Flatten edges for the new algorithm
@@ -258,21 +256,18 @@ def main():
         
         logger.log('MST-Dense-1', dataset_name, args.epsilon, 'Start', 0, len(flat_edges), 0)
         
-        mst = mst_dense_1(sc, V_count, flat_edges, args.epsilon)
+        mst = mst_dense_1(sc, V_count, flat_edges, args.epsilon, logger, dataset_name)
         
         duration = (datetime.now() - timestamp).total_seconds()
-        print('Found MST in: ', duration)
         time.append(duration)
         
         logger.log('MST-Dense-1', dataset_name, args.epsilon, 'End', 'Final', len(mst), duration)
         
-        print('Start creating plot of MST...')
         timestamp = datetime.now()
         if len(vertex_coordinates[0]) > 2:
             plotter.plot_mst_3d(mst, intermediate=False, plot_cluster=False, num_clusters=num_clusters[cnt])
         else:
             plotter.plot_mst_2d(mst, intermediate=False, plot_cluster=False, num_clusters=num_clusters[cnt])
-        print('Created plot of MST in: ', datetime.now() - timestamp)
         cnt += 1
 
     # --- Custom Datasets ---
@@ -283,33 +278,24 @@ def main():
     for dataset_path in datasets_custom:
         dataset_name = os.path.basename(dataset_path)
         timestamp = datetime.now()
-        print(f'Start reading and filtering {dataset_path}...')
         
         vertex_list, size, E_dict = data_reader.read_and_filter_dataset(dataset_path, min_degree=100)
         
         V_count = len(vertex_list)
-        print('Size dataset: ', V_count)
         read_duration = (datetime.now() - timestamp).total_seconds()
-        print('Created/Filtered graph in: ', read_duration)
         
         logger.log('MST-Dense-1', dataset_name, args.epsilon, 'DataLoad', 0, size, read_duration)
         
-        print('Start creating MST (Dense-1)...')
         timestamp = datetime.now()
         
         flat_edges = flatten_edges(E_dict)
-        print(f'Flattened edges count: {len(flat_edges)}')
         
-        mst = mst_dense_1(sc, V_count, flat_edges, args.epsilon)
+        mst = mst_dense_1(sc, V_count, flat_edges, args.epsilon, logger, dataset_name)
         
         duration = (datetime.now() - timestamp).total_seconds()
-        print('Found MST in: ', duration)
         time.append(duration)
         
-        print(f"MST Size: {len(mst)}")
         logger.log('MST-Dense-1', dataset_name, args.epsilon, 'Complete', 'Final', len(mst), duration)
-        
-        print('Skipping plot (no coordinates available for this dataset)')
     
     print('Done...')
     for i in range(len(names_datasets)):

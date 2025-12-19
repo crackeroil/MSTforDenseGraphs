@@ -114,7 +114,7 @@ class Plotter:
                         ax.plot(linex, liney, linez, self.colors[cnt])
 
                     cnt = (cnt + 1) % len(self.colors)
-                    filename = self.file_loc + self.machine_string + '{}'.format(cnt)
+                    filename = self.file_loc + self.machine_string + '{}'.format(cnt) + '.png'
                     plt.savefig(filename, dpi='figure')
                     plt.clf()
                     if cnt >= plot_num_machines:
@@ -131,7 +131,7 @@ class Plotter:
                     linez = [float(z[int(m[i][0])]), float(z[int(m[i][1])])]
                     ax.plot(linex, liney, linez, self.colors[cnt])
                 cnt = (cnt + 1) % len(self.colors)
-            filename = self.file_loc + self.machine_string + 'all'
+            filename = self.file_loc + self.machine_string + 'all.png'
             plt.savefig(filename, dpi='figure')
             plt.clf()
 
@@ -186,7 +186,7 @@ class Plotter:
                 for j in range(len(clusters)):
                     if mst[i][0] in clusters[j]:
                         ax.plot3D(linex, liney, linez, c=self.colors[j])
-            filename = self.file_loc + self.name_dataset + '_clusters'
+            filename = self.file_loc + self.name_dataset + '_clusters.png'
             plt.savefig(filename, dpi='figure')
             plt.clf()
         else:
@@ -199,7 +199,7 @@ class Plotter:
                 liney = [float(y[int(mst[i][0])]), float(y[int(mst[i][1])])]
                 linez = [float(z[int(mst[i][0])]), float(z[int(mst[i][1])])]
                 ax.plot3D(linex, liney, linez)
-            filename = self.file_loc + self.name_dataset + '_final'
+            filename = self.file_loc + self.name_dataset + '_final.png'
             plt.savefig(filename, dpi='figure')
             plt.clf()
 
@@ -227,7 +227,7 @@ class Plotter:
                         plt.plot(linex, liney, self.colors[cnt])
 
                     cnt = (cnt + 1) % len(self.colors)
-                    filename = self.file_loc + self.machine_string + '{}'.format(cnt)
+                    filename = self.file_loc + self.machine_string + '{}'.format(cnt) + '.png'
                     plt.savefig(filename, dpi='figure')
                     plt.clf()
                     if cnt >= plot_num_machines:
@@ -240,7 +240,7 @@ class Plotter:
                     liney = [float(y[int(m[i][0])]), float(y[int(m[i][1])])]
                     plt.plot(linex, liney, self.colors[cnt])
                 cnt = (cnt + 1) % len(self.colors)
-            filename = self.file_loc + self.machine_string + 'all'
+            filename = self.file_loc + self.machine_string + 'all.png'
             plt.savefig(filename, dpi='figure')
             plt.clf()
         elif plot_cluster:
@@ -286,7 +286,7 @@ class Plotter:
                 for j in range(len(clusters)):
                     if mst[i][0] in clusters[j]:
                         plt.plot(linex, liney, c=self.colors[j])
-            filename = self.file_loc + self.name_dataset + '_clusters'
+            filename = self.file_loc + self.name_dataset + '_clusters.png'
             plt.savefig(filename, dpi='figure')
             plt.clf()
         else:
@@ -294,7 +294,7 @@ class Plotter:
                 linex = [float(x[int(mst[i][0])]), float(x[int(mst[i][1])])]
                 liney = [float(y[int(mst[i][0])]), float(y[int(mst[i][1])])]
                 plt.plot(linex, liney)
-            filename = self.file_loc + self.name_dataset + '_final'
+            filename = self.file_loc + self.name_dataset + '_final.png'
             plt.savefig(filename, dpi='figure')
             plt.clf()
 
@@ -359,6 +359,6 @@ class Plotter:
             liney = [y[i], y[final[i]]]
             plt.plot(linex, liney, color)
         # plt.show()
-        filename = self.file_loc + self.name_dataset + str(self.round)
+        filename = self.file_loc + self.name_dataset + str(self.round) + '.png'
         plt.savefig(filename, dpi='figure')
         plt.clf()
